@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de Funcionários</h1>
+
+    <div class="lista-funcionario"></div>
+
+    <hr>
+
+    <select id="lista-servidores"></select>
+
+    <hr>
+
+    <table id="tabela-servidores">
+        <!-- <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr> -->
+    </table>
+
+    <script>
+        const funcionarios = ['Renato', 'Diogo', 'Renan', 'Fabrícia'];
+
+        const lista = document.querySelector('.lista-funcionario');
+
+        const campoSelecao = document.querySelector('#lista-servidores');
+
+        lista.innerHTML = 
+        `<li>Nome: ${funcionarios[0]}</li>
+         <li>Nome: ${funcionarios[1]} </li>
+         <li>Nome: ${funcionarios[2]} </li>
+         <li>Nome: ${funcionarios[3]} </li>
+        `;
+
+        campoSelecao.innerHTML = `
+        <option>SELECIONE...</option>
+        <option>${funcionarios[0]}</option>
+        <option>${funcionarios[1]}</option>
+        <option>${funcionarios[2]}</option>
+        <option>${funcionarios[3]}</option>
+        `;
+
+    </script>
+</body>
+</html>
