@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de frutas</h1>
+    <!--div simples-->
+    <div class="listaFrutas"></div> 
+    <hr>
+    <h1>Frutas</h1>
+    <select id="listaFrutasNovas"></select>
+    <hr>
+    <table id="tabela-servidores" border="1"></table>
+
+    <script>
+        const frutas = ['uva','pera','melancia','banana']
+        const listaFrutas = document.querySelector('.listaFrutas');
+        const frutasNovas = document.querySelector('#listaFrutasNovas');
+        const tabelaFrutas = document.querySelector('#tabela-servidores');
+        listaFrutas.innerHTML = 
+        `Fruta 1: ${frutas[0]}<br>
+         Fruta 2: ${frutas[1]}<br>
+         Fruta 3: ${frutas[2]}<br>
+         Fruta 4: ${frutas[3]}<br>
+         `;
+        frutasNovas.innerHTML= 
+        `
+        <h1>Frutas</h1>
+        <option>Selecione</option>
+        <option>${frutas[0]}</option>
+        <option>${frutas[1]}</option>
+        <option>${frutas[2]}</option>
+        <option>${frutas[3]}</option>
+        `;   
+
+        tabelaFrutas.innerHTML =
+        `
+        <tr>
+            <th>Nome das frutas:</>
+        </tr>
+        <tr>
+            <td>${frutas[0]}</td>    
+        <tr/>
+        <tr>
+            <td>${frutas[1]}</td>  
+        </tr>
+        <tr>
+            <td>${frutas[2]}</td>
+        </tr>
+        <tr>
+            <td>${frutas[3]}</td>    
+        </tr>
+        `;
+
+        
+        
+    </script>
+
+
+
+</body>
+</html>

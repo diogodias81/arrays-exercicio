@@ -16,7 +16,7 @@
 
     <hr>
 
-    <table id="tabela-servidores">
+    <table id="tabela-servidores" border="1">
         <!-- <tr>
             <td></td>
             <td></td>
@@ -32,6 +32,8 @@
 
         const campoSelecao = document.querySelector('#lista-servidores');
 
+        const lista2 =document.querySelector('#tabela-servidores')
+
         lista.innerHTML = 
         `<li>Nome: ${funcionarios[0]}</li>
          <li>Nome: ${funcionarios[1]} </li>
@@ -45,6 +47,26 @@
         <option>${funcionarios[1]}</option>
         <option>${funcionarios[2]}</option>
         <option>${funcionarios[3]}</option>
+        `;
+
+
+        lista2.innerHTML = 
+        ` 
+        <tr>
+            <th>Nomes:</th>
+        </tr>
+        <tr>
+            <td>${funcionarios[0]}</td>    
+        </tr>
+        <tr>
+            <td>${funcionarios[1]}</td>    
+        </tr>
+        <tr>
+            <td>${funcionarios[2]}</td>    
+        </tr>
+        <tr>
+            <td>${funcionarios[3]}</td>    
+        </tr>
         `;
 
     </script>
