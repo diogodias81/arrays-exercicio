@@ -25,7 +25,7 @@ carros.push("titan")
 //remove do incio
 carros.shift()
 
-//removo do fim
+//remove do fim
 carros.pop()
 
 console.log(carros)

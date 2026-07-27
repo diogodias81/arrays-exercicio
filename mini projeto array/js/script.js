@@ -37,6 +37,7 @@ function mostrarArray(){
     <option>${nomes[2]}</option><br>
     <option>${nomes[3]}</option><br>
     `
-    //nao esquecer!!!!!!const nomes = ['Pedro roberto','joao silva']
+    //nao esquecer!!!!!!
+        //const nomes = ['Pedro roberto','joao silva']
         // const listaIndex = nomes.indexOf('Pedro roberto');
         // alert(`O Primeiro indice da lista e: ${nomes[0]} e possui a posicao: ${listaIndex + 1}`)
