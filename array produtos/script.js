@@ -17,7 +17,6 @@ alert(
     O Index ${modificado2} e o produto: ${produtos[2]}
     O Index ${modificado3} e o produto: ${produtos[3]}
     `
-
 )
 lista.innerHTML = 
     `
