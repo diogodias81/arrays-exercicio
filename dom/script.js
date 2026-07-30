@@ -11,7 +11,7 @@ while(i < nomes.length){
         <td>${nomes[i]}</td>
         <td>${idade[i]}</td>
     </tr>
-    `;
+    `;  
     i++;    
 }
 tabela.innerHTML = conteudoLista;
