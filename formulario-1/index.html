@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Identidade</title>
+</head>
+<body>
+    <h1>Bem vindo ao Formulario de Emissão De Nova Identidade</h1>
+
+    <form action="">
+    <div>
+        <label for="">Nome*: </label>
+        <input type="text" id="nome">
+    </div>
+    <br>
+     <div>
+        <label for="">Idade*:</label>
+        <input type="number" id="idade" min="0" max="10">
+    </div>
+    <br>
+    <div>
+        <label for="">Cpf*:</label>
+        <input type="text"  id="cpf" maxlength="11">
+    </div>
+    <br>
+    <div>
+        <label for="">Numero de Contato*:</label>
+        <input type="text" id="telefone" maxlength="8">
+    </div>    
+    <br>
+    <div>
+        <label for="">Data Nascimento*:</label>
+        <input type="date" name="" id="dataNascimento">
+    </div>
+    <br>
+    <div>
+        <label for="">E-mail*:</label>
+        <input type="email" id="email" placeholder="email.teste@gmail.com">
+    </div>
+    <br>
+    <div>
+        <label for="">Nome Da Mãe*:</label>
+        <input type="text" id="nomeMae">
+    </div>
+    <br>
+    <div>
+        <label for="">Nome Do Pai*:</label>
+        <input type="text" id="nomePai">
+    </div>
+    <br>
+    <div>
+        <label for=""><strong>Insira o Setor:</strong> </label>
+        <input type="radio" name="escolha" id="Setor">
+        <label for="">Policia Civil</label>
+        
+        <input type="radio" name="escolha" id="Setor">
+        <label for="">Estatistica</label>
+        
+        <input type="radio" name="escolha" id="Setor">
+        <label for="">Sistemas Corporativos</label>
+        
+    </div>
+   <button type="button" onclick="enviarDados()">Enviar Cadastro</button>
+</form>
+    <script src="script.js"></script>
+</body>
+</html>
